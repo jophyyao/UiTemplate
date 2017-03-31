@@ -1,3 +1,2 @@
-change dir to jophy template.
-
+Enter the sub directory to obtain the templates
 
