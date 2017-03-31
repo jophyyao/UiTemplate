@@ -66,15 +66,8 @@ var Main = function () {
       'api_domain' : '',
       'api_host' : '',
       'api_database' : '',
-      'api_measurement' : '',
-      'ispping_api' : ''
+      'api_measurement' : ''
     };
-
-    // Highcharts.setOptions({
-    //   global: {
-    //     useUTC: false
-    //   }
-    // })
 
     return res;
 
@@ -294,58 +287,6 @@ var DateRange = function () {
       demo();
     }
   }
-}
-
-
-
-
-function timeConverter(UNIX_timestamp){
-  var a = new Date(UNIX_timestamp * 1000);
-  var months = ['01','02','03','04','05','06','07','08','09','10','11','12'];
-  var year = a.getFullYear();
-  var month = months[a.getMonth()];
-  var date = a.getDate();
-  var hour = a.getHours();
-  var min = a.getMinutes();
-  var sec = a.getSeconds();
-  //var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
-  var time = month + '-' + date;
-  return time;
-}
-
-function timeConverter_ymd(UNIX_timestamp){
-  var a = new Date(UNIX_timestamp * 1000);
-  var months = ['01','02','03','04','05','06','07','08','09','10','11','12'];
-  var year = a.getFullYear();
-  var month = months[a.getMonth()];
-  var date = a.getDate();
-  var hour = a.getHours();
-  var min = a.getMinutes();
-  var sec = a.getSeconds();
-  //var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
-  var time = year + '-' + month + '-' + date;
-  return time;
-}
-
-function timeConverter_ymdHM(UNIX_timestamp){
-  var a = new Date(UNIX_timestamp * 1000);
-  var months = ['01','02','03','04','05','06','07','08','09','10','11','12'];
-  var year = a.getFullYear();
-  var month = months[a.getMonth()];
-  var date = a.getDate();
-  var hour = a.getHours();
-  var min = a.getMinutes();
-  var sec = a.getSeconds();
-  if (hour < 10){
-    hour = '0' + hour;
-  }
-  if (min < 10){
-    min = '0' + min;
-  }
-
-  //var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
-  var time = year + '-' + month + '-' + date + ' ' + hour + ':' + min;
-  return time;
 }
 
 
