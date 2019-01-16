@@ -1,5 +1,5 @@
 <template>
-  <div id="ServerDelivery">
+  <div id="Page1">
 
 
     <section id="content_wrapper">
@@ -67,7 +67,7 @@
               </div>
             </div>
 
-            <div class="col-md-12 col-lg-6 admin-grid">
+            <div class="col-md-12 col-lg-6 admin-grid right-panel">
               <div class="panel">
                 <div class="panel-heading">
                   <span class="panel-title fw700 text-info">Content2</span>
@@ -114,10 +114,10 @@
         },
         food_options: [{
           value: '选项1',
-          label: '酸菜鱼'
+          label: '日料'
         }, {
           value: '选项2',
-          label: '日料'
+          label: '火锅'
         }, {
           value: '选项3',
           label: '麻辣烫'
@@ -175,14 +175,19 @@
         'drag': true,
         'panel_id': '#panel1'
       });
+
+
+
+
     }
   }
 </script>
 
 
-<style>
-  #ServerDelivery {
-    padding-top: 60px;
+<style lang="less">
+  @import "./pages.less";
+  #Page1 {
+    margin-top: 60px;
   }
 
   .text {
@@ -193,9 +198,7 @@
     padding: 18px 0;
   }
 
-  .el-row {
-    margin-bottom: 20px;
-  }
+
 
   .panel {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12), 0 0 6px 0 rgba(0, 0, 0, .04);
@@ -203,3 +206,4 @@
 
 
 </style>
+
