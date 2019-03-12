@@ -1,0 +1,351 @@
+@import "../../theme/public/bk";
+
+.sidebar-hidden {
+  .header {
+    .logo {
+      background: #222d32;
+      .big {
+        display: none;
+      }
+      .min {
+        display: block;
+      }
+      width: 64px;
+    }
+
+  }
+  .aside {
+    .sidebar-toggle {
+      .icon-left {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .main {
+    .app-body {
+      margin-left: 64px;
+    }
+  }
+}
+
+.sidebar-close {
+  .header {
+    .logo {
+      width: 0;
+      overflow: hidden;
+    }
+  }
+  .aside {
+    margin-left: -230px;
+  }
+  .main {
+    .app-body {
+      margin-left: 0;
+    }
+  }
+}
+
+.sidebar-hidden.sidebar-close {
+  .aside {
+    margin-left: -64px;
+  }
+}
+
+.main {
+  display: flex;
+  .el-menu:not(.el-menu--collapse) {
+    width: 230px;
+  }
+  .app {
+    width: 100%;
+    background-color: #ecf0f5;
+  }
+  .aside {
+    position: fixed;
+    margin-top: 50px;
+    z-index: 10;
+    background-color: #222d32;
+    transition: all 0.3s ease-in-out;
+    .menu {
+      overflow-y: auto;
+      height: calc(~'100vh - 100px');
+      background-color: #FFF !important;
+      border-right: 1px solid #ccc !important;
+    }
+    .sidebar-toggle {
+      position: relative;
+      width: 100%;
+      height: 50px;
+      background-color: @bk_color;
+      color: #fff;
+      cursor: pointer;
+      .icon-left {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0;
+        width: 64px;
+        height: 100%;
+        font-size: 20px;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+  .app-body {
+    margin-left: 230px;
+    -webkit-transition: margin-left 0.3s ease-in-out;
+    transition: margin-left 0.3s ease-in-out;
+  }
+  .main-container {
+    //margin-top: 50px;
+    padding: 6px;
+    //min-height: calc(~'100vh - 101px');
+    min-height: calc(~'100vh - 0px');
+  }
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  height: 50px;
+  background-color: @bk_color;
+  z-index: 10;
+  .logo {
+    .min {
+      display: none;
+      background-color: @bk_logo_color;
+    }
+    width: 230px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background-color: @bk_logo_color;
+    -webkit-transition: width 0.35s;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .right {
+    position: absolute;
+    right: 0;
+  }
+  .header-btn {
+    .el-badge__content {
+      top: 14px;
+      right: 7px;
+      text-align: center;
+      font-size: 9px;
+      padding: 0 3px;
+      background-color: #00a65a;
+      color: #fff;
+      border: none;
+      white-space: nowrap;
+      vertical-align: baseline;
+      border-radius: .25em;
+    }
+    overflow: hidden;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    padding: 0 14px;
+    color: #fff;
+    &:hover {
+      background-color: #367fa9
+    }
+  }
+
+}
+
+.menu {
+  border-right: none;
+}
+
+.el-menu--vertical {
+  min-width: 190px;
+}
+
+.setting-category {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-bar-item {
+  background-color: #FFF;
+  color: #000;
+  overflow-x: hidden;
+}
+
+/*************************
+  public
+ ************************/
+.search-form-row {
+  margin: 5px 0px -14px 0px;
+}
+
+.panel-header {
+  line-height: 10px;
+}
+
+.summary-info {
+  box-shadow: 1px 1px 1px 1px #c4d6cd;
+  margin-bottom: 10px;
+}
+
+.table-search-row {
+  line-height: 34px;
+  margin-bottom: 5px;
+  & > span {
+    float: right;
+    font-size: 18px;
+    font-weight: 600;
+    color: #777;
+    padding: 0px 10px 0px 0px
+  }
+}
+
+.table-search-input {
+  width: 220px;
+  float: right;
+  margin: 0px 0px 10px 0px;
+}
+
+/*************************
+  pagination
+ ************************/
+.table-pagination {
+  float: right;
+  margin: 15px 0px;
+}
+
+/*************************
+  table
+ ************************/
+.el-table {
+  th {
+    background-color: #f9f9f9;
+    //color:#444;
+    font-weight:600;
+    //background: -webkit-linear-gradient(#eaeaea, #f5f5f5, #ffffff);
+  }
+}
+
+/*************************
+  card
+ ************************/
+.el-card__header {
+  padding: 14px 20px;
+  //background: -webkit-radial-gradient(100px 100px, circle, #90f7c0, #149450);
+  //background: -webkit-radial-gradient(100px 100px, circle, #afafaf, #ffffff, #afafaf);
+
+  //background: -webkit-radial-gradient(100px 100px, circle, #effbf5, #cfffe6, #effbf5);
+  //background: -webkit-radial-gradient(100px 100px, circle, #f9f9f9, #efefef, #f9f9f9);
+  //background: -webkit-radial-gradient(100px 300px, circle, #edfff6, #7cffb9, #ffffff);
+}
+
+@span6: 24.8%;
+@span7: 27.8%;
+@span8: 33.1%;
+@span12: 49.8%;
+@span16: 66.4%;
+@span17: 71.8%;
+@span18: 74.8%;
+@span24: 100%;
+
+.card-span-width-left(@wd) {
+  width: @wd;
+  border: 1px solid #eee;
+}
+
+.card-span-width-right(@wd) {
+  width: @wd;
+  border: 1px solid #eee;
+  margin-left: 4px;
+}
+
+.card-span-6 {
+  .card-span-width-left(@span6);
+}
+
+.card-span-6-right {
+  .card-span-width-right(@span6);
+}
+
+.card-span-7 {
+  .card-span-width-left(@span7);
+}
+
+.card-span-7-right {
+  .card-span-width-right(@span7);
+}
+
+.card-span-8 {
+  .card-span-width-left(@span8);
+}
+
+.card-span-8-right {
+  .card-span-width-right(@span8);
+}
+
+.card-span-12 {
+  .card-span-width-left(@span12);
+}
+
+.card-span-12-right {
+  .card-span-width-right(@span12);
+}
+
+.card-span-16 {
+  .card-span-width-left(@span16);
+}
+
+.card-span-16-right {
+  .card-span-width-right(@span16);
+}
+
+.card-span-17 {
+  .card-span-width-left(@span17);
+}
+
+.card-span-17-right {
+  .card-span-width-right(@span17);
+}
+
+.card-span-18 {
+  .card-span-width-left(@span18);
+}
+
+.card-span-18-right {
+  .card-span-width-right(@span18);
+}
+
+.card-span-24 {
+  .card-span-width-left(@span24);
+}
+
+.panel-title-select-text {
+  color: #64b6ed;
+  font-weight: 600;
+}
+
+.header .header-btn:hover {
+  background-color: #11985d;
+}
+
+.clearfix {
+  font-weight: 600;
+  color: #5d5d5d;
+  cursor: pointer;
+}
+
+.fullscreen{
+  background-color: #eff1f6 !important;
+}
+.fullscreen-button{
+  background-color:#fbfbfb;
+  padding:4px 8px;
+  height:25px;
+}

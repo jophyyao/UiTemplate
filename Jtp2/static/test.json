@@ -1,0 +1,62 @@
+{
+  "code": 0,
+  "message": "",
+  "data": [
+    {
+      "name": "spark.ops.kyhub.cn",
+      "children": [
+        {
+          "name": "4层: hwbx/172.26.254.124",
+          "children": [
+            {
+              "name": "7层: hwbx",
+              "children": [
+                {
+                  "name": "默认",
+                  "children": [
+                    {
+                      "name": "172.26.2.30:8086",
+                      "children": null,
+                      "collapsed": false
+                    },
+                    {
+                      "name": "172.26.2.187:8086",
+                      "children": null,
+                      "collapsed": false
+                    }
+                  ],
+                  "collapsed": true
+                }
+              ],
+              "collapsed": false
+            },
+            {
+              "name": "7层: hwbx",
+              "children": [
+                {
+                  "name": "默认",
+                  "children": [
+                    {
+                      "name": "172.26.2.30:8086",
+                      "children": null,
+                      "collapsed": false
+                    },
+                    {
+                      "name": "172.26.2.187:8086",
+                      "children": null,
+                      "collapsed": false
+                    }
+                  ],
+                  "collapsed": true
+                }
+              ],
+              "collapsed": false
+            }
+          ],
+          "collapsed": false
+        }
+      ],
+      "collapsed": false
+    }
+  ]
+}
