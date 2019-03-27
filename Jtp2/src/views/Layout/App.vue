@@ -163,7 +163,7 @@
                 } else {
                     _self.loginUser = user
                     if (Config.default.env !== "dev") {
-                        window.location.href = "https://sso-op.kingnet.com/Authorize/get_token?client_id=iaas&redirect_uri=/&state=state"
+                        //window.location.href = "https://sso-op.kingnet.com/Authorize/get_token?client_id=iaas&redirect_uri=/&state=state"
                     }
                 }
             },
