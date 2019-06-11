@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import store from './store'
 import ElementUI from 'element-ui'
-import './theme/index.css'
+//import './theme/index.css'
 import './assets/css/font-awesome.min.css'
 import './assets/css/style.css'
+import 'element-ui/lib/theme-chalk/index.css';
 import router from './router'
 import Config from './config'
 import Api from './api'
