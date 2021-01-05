@@ -1,0 +1,96 @@
+@bkColor: #FFF;
+@MenuFontColor: #252b3a;
+
+@line-gradient1: #29adf9;
+@line-gradient2: #b5dbff;
+
+.sidebar {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #ffffff, #f1f8ff);
+}
+
+.sidebar-title {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #dcdfe6;
+  color: #ffffff;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  background-color: #282b34;
+  background: linear-gradient(to right, #29adf9, #b5dbff);
+}
+
+.sidebar-box {
+  width: 100%;
+  height: calc(100% - 64px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  overflow: "-moz-scrollbars-none";
+  scrollbar-width: none; /*  火狐   */
+  color: #ccc;
+  //background: linear-gradient(to right, #ffffff, #f1f8ff);
+}
+
+.sidebar-box::-webkit-scrollbar {
+  display: none; /*  Chrome  */
+  width: 0 !important; /*  Chrome  */
+}
+
+.el-menu-vertical-sidebar {
+  background: linear-gradient(to right, #ffffff, #f1f8ff);
+  &:not(.el-menu--collapse) {
+    width: 240px;
+    min-height: 400px;
+  }
+}
+
+/*******************************
+  sidebar item
+ *******************************/
+
+.el-menu-item{
+  color: @MenuFontColor !important;
+  padding-left: 30px !important;
+  height: 46px !important;
+  line-height: 46px !important;
+  background: linear-gradient(to right, #ffffff, #f1f8ff);
+  &.is-active{
+    //background: #1A86EE !important;
+    background: #d0ecff !important;
+    //background: linear-gradient(to right, #bee2ff, #eef5fb)
+  }
+  &:hover{
+    background: #e6f6ff !important;
+  }
+  span{
+    padding-left: 10px;
+  }
+}
+.el-submenu{
+  span{
+    padding-left: 10px;
+  }
+}
+
+.el-submenu__title{
+  color: @MenuFontColor !important;
+  padding-left: 30px !important;
+  height: 46px !important;
+  line-height: 46px !important;
+}
+.el-icon-tickets{
+  color: @MenuFontColor !important;
+  padding-left: 20px;
+}
+
+.nest-menu{
+  //margin-left: 20px;
+}
+.menu-wrapper{
+  line-height: 40px;
+}
+
