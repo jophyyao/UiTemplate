@@ -1063,6 +1063,11 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.6.tgz#f4c7ec43e81b319a9815115031709f26987891f0"
   integrity sha512-3c+yGKvVP5Y9TYBEibGNR+kLtijnj7mYrXRg+WpFb2X9xm04g/DXYkfg4hmzJQosc9snFNUPkbYIhu+KAm6jJw==
 
+"@types/json-schema@^7.0.8":
+  version "7.0.8"
+  resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.8.tgz#edf1bf1dbf4e04413ca8e5b17b3b7d7d54b59818"
+  integrity sha512-YSBPTLTVm2e2OoQIDYx8HaeWJ5tTToLH67kXR7zYNGupXMEHa2++G8k+DczX2cFVgalypqtyZIcU19AFcmOpmg==
+
 "@types/minimatch@*":
   version "3.0.3"
   resolved "https://registry.npm.taobao.org/@types/minimatch/download/@types/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -1529,7 +1534,7 @@ ajv@^6.1.0, ajv@^6.10.2, ajv@^6.5.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-ajv@^6.12.4:
+ajv@^6.12.4, ajv@^6.12.5:
   version "6.12.6"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.6.tgz#baf5a62e802b07d977034586f8c3baf5adf26df4"
   integrity sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==
@@ -3734,6 +3739,11 @@ faye-websocket@~0.11.1:
   dependencies:
     websocket-driver ">=0.5.1"
 
+fflate@^0.3.8:
+  version "0.3.11"
+  resolved "https://registry.yarnpkg.com/fflate/-/fflate-0.3.11.tgz#2c440d7180fdeb819e64898d8858af327b042a5d"
+  integrity sha512-Rr5QlUeGN1mbOHlaqcSYMKVpPbgLy0AWT/W0EHxA6NGI12yO1jpoui2zBBvU2G824ltM6Ut8BFgfHSBGfkmS0A==
+
 figgy-pudding@^3.5.1:
   version "3.5.1"
   resolved "https://registry.npm.taobao.org/figgy-pudding/download/figgy-pudding-3.5.1.tgz#862470112901c727a0e495a80744bd5baa1d6790"
@@ -4946,6 +4956,13 @@ json5@^2.1.0:
   dependencies:
     minimist "^1.2.0"
 
+json5@^2.1.2:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.0.tgz#2dfefe720c6ba525d9ebd909950f0515316c89a3"
+  integrity sha512-f+8cldu7X/y7RAJurMEJmdoKXGB/X550w2Nr3tTbezL6RwEE/iMcm+tZnXeoZtKuOq6ft8+CqzEkrIgx1fPoQA==
+  dependencies:
+    minimist "^1.2.5"
+
 jsonfile@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npm.taobao.org/jsonfile/download/jsonfile-4.0.0.tgz?cache=0&sync_timestamp=1583593992319&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fjsonfile%2Fdownload%2Fjsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
@@ -4992,6 +5009,11 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.npm.taobao.org/kind-of/download/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha1-B8BQNKbDSfoG4k+jWqdttFgM5N0=
 
+klona@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.4.tgz#7bb1e3affb0cb8624547ef7e8f6708ea2e39dfc0"
+  integrity sha512-ZRbnvdg/NxqzC7L9Uyqzf4psi1OM4Cuc+sJAkQPjO6XkQIJTNbfK2Rsmbw8fx1p2mkZdp2FZYo2+LwXYY/uwIA==
+
 launch-editor-middleware@^2.2.1:
   version "2.2.1"
   resolved "https://registry.npm.taobao.org/launch-editor-middleware/download/launch-editor-middleware-2.2.1.tgz#e14b07e6c7154b0a4b86a0fd345784e45804c157"
@@ -5013,6 +5035,15 @@ lcid@^2.0.0:
   integrity sha1-bvXS32DlL4LrIopMNz6NHzlyU88=
   dependencies:
     invert-kv "^2.0.0"
+
+less-loader@^7.2.1:
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/less-loader/-/less-loader-7.3.0.tgz#f9d6d36d18739d642067a05fb5bd70c8c61317e5"
+  integrity sha512-Mi8915g7NMaLlgi77mgTTQvK022xKRQBIVDSyfl3ErTuBhmZBQab0mjeJjNNqGbdR+qrfTleKXqbGI4uEFavxg==
+  dependencies:
+    klona "^2.0.4"
+    loader-utils "^2.0.0"
+    schema-utils "^3.0.0"
 
 less@^4.0.0:
   version "4.0.0"
@@ -5071,6 +5102,15 @@ loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2.3, loader-utils@^1.4
     big.js "^5.2.2"
     emojis-list "^3.0.0"
     json5 "^1.0.1"
+
+loader-utils@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-2.0.0.tgz#e4cace5b816d425a166b5f097e10cd12b36064b0"
+  integrity sha512-rP4F0h2RaWSvPEkD7BLDFQnvSf+nK+wr3ESUjNTyAGobqrijmW92zc+SO6d4p4B1wh7+B/Jg1mkQe5NYUEHtHQ==
+  dependencies:
+    big.js "^5.2.2"
+    emojis-list "^3.0.0"
+    json5 "^2.1.2"
 
 locate-path@^3.0.0:
   version "3.0.0"
@@ -5378,6 +5418,11 @@ minimist@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npm.taobao.org/minimist/download/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
   integrity sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=
+
+minimist@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
+  integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
 
 minipass-collect@^1.0.2:
   version "1.0.2"
@@ -7027,6 +7072,15 @@ schema-utils@^2.6.5:
     ajv "^6.12.4"
     ajv-keywords "^3.5.2"
 
+schema-utils@^3.0.0:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-3.1.1.tgz#bc74c4b6b6995c1d88f76a8b77bea7219e0c8281"
+  integrity sha512-Y5PQxS4ITlC+EahLuXaY86TXfR7Dc5lw294alXOq86JAHCihAIZfqv8nNCWvaEJvaC51uN9hbLGeV0cFBdH+Fw==
+  dependencies:
+    "@types/json-schema" "^7.0.8"
+    ajv "^6.12.5"
+    ajv-keywords "^3.5.2"
+
 screenfull@^5.0.2:
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/screenfull/-/screenfull-5.0.2.tgz#b9acdcf1ec676a948674df5cd0ff66b902b0bed7"
@@ -7366,10 +7420,10 @@ sprintf-js@~1.0.2:
   resolved "https://registry.npm.taobao.org/sprintf-js/download/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
-ssf@~0.10.3:
-  version "0.10.3"
-  resolved "https://registry.yarnpkg.com/ssf/-/ssf-0.10.3.tgz#8eae1fc29c90a552e7921208f81892d6f77acb2b"
-  integrity sha512-pRuUdW0WwyB2doSqqjWyzwCD6PkfxpHAHdZp39K3dp/Hq7f+xfMwNAWIi16DyrRg4gg9c/RvLYkJTSawTPTm1w==
+ssf@~0.11.2:
+  version "0.11.2"
+  resolved "https://registry.yarnpkg.com/ssf/-/ssf-0.11.2.tgz#0b99698b237548d088fc43cdf2b70c1a7512c06c"
+  integrity sha512-+idbmIXoYET47hH+d7dfm2epdOMUDjqcB4648sTZ+t2JwoyBFL/insLfB/racrDmsKB3diwsDA696pZMieAC5g==
   dependencies:
     frac "~1.1.2"
 
@@ -8390,6 +8444,11 @@ wmf@~1.0.1:
   resolved "https://registry.yarnpkg.com/wmf/-/wmf-1.0.2.tgz#7d19d621071a08c2bdc6b7e688a9c435298cc2da"
   integrity sha512-/p9K7bEh0Dj6WbXg4JG0xvLQmIadrner1bi45VMJTfnbVHsc7yIajZyoSoK60/dtVBs12Fm6WkUI5/3WAVsNMw==
 
+word@~0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/word/-/word-0.3.0.tgz#8542157e4f8e849f4a363a288992d47612db9961"
+  integrity sha512-OELeY0Q61OXpdUfTp+oweA/vtLVg5VDOXh+3he3PNzLGG/y0oylSOC1xRVj0+l4vQ3tj/bB1HVHv1ocXkQceFA==
+
 worker-farm@^1.7.0:
   version "1.7.0"
   resolved "https://registry.npm.taobao.org/worker-farm/download/worker-farm-1.7.0.tgz#26a94c5391bbca926152002f69b84a4bf772e5a8"
@@ -8426,10 +8485,10 @@ ws@^6.0.0, ws@^6.2.1:
   dependencies:
     async-limiter "~1.0.0"
 
-xlsx@^0.15.6:
-  version "0.15.6"
-  resolved "https://registry.yarnpkg.com/xlsx/-/xlsx-0.15.6.tgz#461f841d6d9ea1a8375e2cd246bf23aece08a1d5"
-  integrity sha512-7vD9eutyLs65iDjNFimVN+gk/oDkfkCgpQUjdE82QgzJCrBHC4bGPH7fzKVyy0UPp3gyFVQTQEFJaWaAvZCShQ==
+xlsx@^0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/xlsx/-/xlsx-0.17.0.tgz#028176a0140967dcee1817d221678461e47481c8"
+  integrity sha512-bZ36FSACiAyjoldey1+7it50PMlDp1pcAJrZKcVZHzKd8BC/z6TQ/QAN8onuqcepifqSznR6uKnjPhaGt6ig9A==
   dependencies:
     adler-32 "~1.2.0"
     cfb "^1.1.4"
@@ -8437,8 +8496,10 @@ xlsx@^0.15.6:
     commander "~2.17.1"
     crc-32 "~1.2.0"
     exit-on-epipe "~1.0.1"
-    ssf "~0.10.3"
+    fflate "^0.3.8"
+    ssf "~0.11.2"
     wmf "~1.0.1"
+    word "~0.3.0"
 
 xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.2"
